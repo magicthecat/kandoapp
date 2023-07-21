@@ -1,0 +1,33 @@
+.container {
+
+    padding: 16px;
+    /* Add padding around the items */
+    border: 1px solid #ccc;
+    /* Add a faint border */
+
+    /* Add rounded corners */
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+
+    padding: 16px;
+    margin: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.card div {
+    display: flex;
+    align-items: center;
+}
+
+.card strong {
+    font-weight: bold;
+}
+
+.card span {
+    margin-left: 8px;
+}

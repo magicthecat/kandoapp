@@ -1,3 +1,4 @@
+
 export const NavigationItem = ({ page, LinkComponent }) => {
 
   return (
@@ -20,14 +21,4 @@ export const Navigation = ({ navigationData, LinkComponent }) => {
   )
 }
 
-export const NavigationWrapper = ({ children, navigationDataCallBack, LinkComponent, SwitchComponent }) => {
 
-  return (
-    <>
-      <Navigation LinkComponent={LinkComponent} navigationData={navigationDataCallBack(children)} />
-      <SwitchComponent>
-        {children}
-      </SwitchComponent>
-    </>
-  );
-};

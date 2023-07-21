@@ -1,0 +1,10 @@
+.loadingBarContainer {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* Add a transition for the opacity property */
+}
+
+.loadingBarContainer.loaded {
+    opacity: 1;
+    /* After 0.2 seconds, set the opacity to 1 to make it visible */
+}
