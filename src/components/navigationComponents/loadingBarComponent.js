@@ -8,7 +8,7 @@ export const LoadingBar = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false);
-        }, 500);
+        }, 1000);
     }, []);
 
     return (

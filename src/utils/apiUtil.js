@@ -1,3 +1,4 @@
+
 export class ApiUtil {
 
     static fetchData = ({ endpoint }) => {
@@ -5,4 +6,10 @@ export class ApiUtil {
     };
 
 
+    static fetchDataByQueryParam = ({ endpoint, queryParam, value }) => {
+        return fetch(`http://localhost:3002/${endpoint}?${queryParam}=${value}`).then((response) => response.json());
+    };
+
+
 }
+
